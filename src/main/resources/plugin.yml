@@ -1,0 +1,8 @@
+name: ShellExecutor
+version: '${project.version}'
+main: com.jodexindustries.shellexecutor.ShellExecutor
+api-version: 1.18
+authors: [ _Jodex__ ]
+description: ShellExecutor for minecraft server
+commands:
+  shell: {}
