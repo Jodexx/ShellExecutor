@@ -12,11 +12,11 @@ public final class ShellExecutor extends JavaPlugin {
     public void onEnable() {
         getCommand("shell").setExecutor((sender, command, label, args) -> {
             if (!sender.hasPermission("shellexecutor.shell")) {
-                sender.sendMessage("§cУ вас недостаточно прав!");
+                sender.sendMessage("§cYou don't have permissions!");
                 return true;
             }
             if (args.length == 0) {
-                sender.sendMessage("§cИспользование: §c/shell (название shell файла)");
+                sender.sendMessage("§cUsage: §c/shell (name of shell file)");
                 return true;
             }
             String file = args[0];
